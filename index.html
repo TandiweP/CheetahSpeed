@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cheetah Speed</title>
+</head>
+<body>
+    <navbar>
+        <ul>
+        <a href="https://en.wikipedia.org/wiki/Cheetah">Cheetah Wiki</a>
+        <a href="https://kids.nationalgeographic.com/animals/mammals/facts/cheetah">Cheetah National Geo Kids</a>
+        </ul>
+    </navbar>
+    
+    <figure>
+        <img src="https://images.unsplash.com/photo-1559303970-6d3f3a61b1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1195&q=80"alt="Cheetah Running">
+        <figcaption>A Cheetah racing for its prey</figcaption>
+    </figure>
+    <h1>Did You Know?</h1>
+    <main>
+        <article>As the fastest mammal on land, cheetahs can reach speeds of 60-70 miles per hour.</article>
+        <section>
+            
+                <input id = "Input" type = "number" placeholder="Miles Per Hour">
+                <button onClick={calculateSpeed()}>Convert</button>
+                <p id="result">Kilometers Per Hour: </p>
+            
+        </section>
+        <article></article>
+    </main>
+    <footer>Cheetah's Are Cool!</footer>
+    <script>
+        function calculateSpeed (num) {
+            let mph = document.getElementById("Input").innerHTML;
+            let kph = Math.floor(mph * 1.609344);
+            let p = document.getElementById("result");
+            p.innerHTML = kph;
+            console.log("input recieved");
+        }
+        
+    </script>
+</body>
+</html>
