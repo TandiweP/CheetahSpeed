@@ -26,7 +26,7 @@
             
                 <input id = "Input" type = "number" placeholder="Miles Per Hour">
                 <button onClick={calculateSpeed()}>Convert</button>
-                <p id="result">Kilometers Per Hour: </p>
+                <p id="Output">Kilometers Per Hour: </p>
             
         </section>
         <article></article>
@@ -34,11 +34,12 @@
     <footer>Cheetah's Are Cool!</footer>
     <script>
         function calculateSpeed (num) {
-            let mph = document.getElementById("Input").innerHTML;
-            let kph = Math.floor(mph * 1.609344);
-            let p = document.getElementById("result");
+            const mph = document.getElementById("Input").innerHTML;
+            const kph = Math.floor(mph * 1.609344);
+            const p = document.getElementById("Output");
             p.innerHTML = kph;
             console.log("input recieved");
+            console.log(kph);
         }
         
     </script>
