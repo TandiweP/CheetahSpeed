@@ -53,10 +53,13 @@ figcaption {
 h1 {
   color: white;
   letter-spacing: 1rem;
+  padding-bottom: 1rem;
 }
 
 main {
   color: white;
+  background-color: rgb(238, 95, 34);
+  padding-top: 0.75rem;
 }
 
 footer {
