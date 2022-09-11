@@ -1,5 +1,5 @@
 body {
-  background-color: #ffa69e;
+  background-color: #ffae8f;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -8,7 +8,7 @@ body {
 }
 
 nav {
-  background-color: #f5958d;
+  background-color: #e79c7e;
   height: 10vh;
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@ ul > a:hover {
 figure img {
   max-width: 40vw;
   border-radius: 51% 49% 51% 49% / 53% 39% 61% 47%;
-  border: dashed rgb(223, 136, 49);
+  border: dashed #6f5a7e;
   border-width: 0.25em 0.75em;
 
   /* filter: drop-shadow(0 0 0.75rem rgb(172, 242, 140)); */
@@ -58,7 +58,10 @@ figcaption {
 
 main {
   color: white;
-  background-color: rgb(238, 95, 34);
+  background-color: #ffae8f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 0.75rem;
 }
 
@@ -67,7 +70,7 @@ main {
   letter-spacing: 1rem;
   padding-top: 1%;
   font-size: 1rem;
-  background-color: #f5958d;
+  background-color: #e79c7e;
   margin-bottom: 0;
   height: 15%;
 }
@@ -82,19 +85,26 @@ form {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #ffa69e;
+  width: 40%;
+  background-color: #6f5a7e;
+  opacity: 90%;
   gap: 1rem;
   padding: 3rem;
   font-size: 1.5rem;
+  color: white;
+  /* border: dashed white; */
+  border-radius: 10%;
 }
 
 form > input {
   width: 10vw;
+  height: 2rem;
   text-align: center;
   border: none;
   border-radius: 10%;
-  color: rgb(238, 95, 34);
+  background-color: white;
   font-size: 1rem;
+  color: #6f5a7e;
 }
 
 form > button {
@@ -103,13 +113,17 @@ form > button {
   border: none;
   border-radius: 50%;
   font-size: 1.25rem;
+  color: #6f5a7e;
+  background-color: white;
 }
 
 form > button:hover {
   width: 3.1rem;
   height: 3.1rem;
+
   color: white;
-  background-color: rgb(238, 95, 34);
+  background-color: #ffae8f;
+
   font-size: 2rem;
 }
 /*pseudo class:*/
