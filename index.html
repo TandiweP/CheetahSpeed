@@ -19,27 +19,27 @@
         <img src="https://images.unsplash.com/photo-1559303970-6d3f3a61b1b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1195&q=80"alt="Cheetah Running">
         <!-- <figcaption>Above: A Cheetah races for its prey</figcaption> -->
     </figure>
-    <h1>Did You Know?</h1>
+    <h1 class="didyouknow">Did You Know?</h1>
     <main>
         <article>As the fastest mammal on land, cheetahs can reach speeds of 60-70 miles per hour.</article>
-        <form>
+        <form onsubmit="event.preventDefault();">
                 <label for="mph">Enter a Speed in Miles Per Hour</label>
-                <input id = "mph" type = "text" placeholder="MPH">
+                <input id = "mph" class="mph" type = "text" placeholder="MPH" name="mph">
                 <button onClick={calculateSpeed()}>=</button>
-                <p id="Output">Kilometers Per Hour: </p>
+                <p id="Output" class="kph"></p>
             
         </form>
         <article></article>
     </main>
-    <footer>Cheetah's Are Cool!</footer>
+    <div class="footer">
+        <h1>Cheetah's Are Cool!</h1>
+    </div>
     <script>
-        function calculateSpeed (num) {
-            const mph = document.getElementById("Input").innerHTML;
-            const kph = Math.floor(mph * 1.609344);
-            const p = document.getElementById("Output");
-            p.innerHTML = kph;
-            console.log("input recieved");
-            console.log(kph);
+        function calculateSpeed () {
+            const mph = document.querySelector(".mph").value;
+            const kph = document.querySelector(".kph");
+            kph.textContent = `That's ${mph * 1.61} kilometers per hour!`;
+            
         }
         
     </script>
