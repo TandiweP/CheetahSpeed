@@ -36,7 +36,7 @@ ul > a:hover {
 figure img {
   max-width: 40vw;
   border-radius: 51% 49% 51% 49% / 53% 39% 61% 47%;
-  border: dashed #6f5a7e;
+  border: dashed white;
   border-width: 0.25em 0.75em;
 
   /* filter: drop-shadow(0 0 0.75rem rgb(172, 242, 140)); */
@@ -51,7 +51,7 @@ figcaption {
 }
 
 .didyouknow {
-  color: white;
+  color: #6f5a7e;
   letter-spacing: 1rem;
   padding-bottom: 1rem;
 }
