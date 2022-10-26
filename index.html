@@ -28,7 +28,7 @@
                 <button class = "submit" onClick={calculateSpeed()}>=</button>
                 <p id="Output" class="kph"></p>
 
-                <button class="reset" onclick={reset()}>Reset</button>
+                <button class="reset" onClick={reset()}>Reset</button>
             
         </form>
         <article></article>
@@ -44,8 +44,9 @@
             
         };
 
-        function reset() {
-            document.getElementById("mphForm").reset();
+        function reset () {
+            console.log("reseteded");
+            
             
         };
         
