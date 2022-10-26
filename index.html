@@ -25,10 +25,10 @@
         <form id = "mphForm" onsubmit="event.preventDefault();">
                 <label for="mph">Enter a Speed in Miles Per Hour</label>
                 <input id = "mph" class="mph" type = "text" placeholder="MPH" name="mph">
-                <button class = "submit" onClick={calculateSpeed()}>=</button>
+                <button class = "submit" onclick={calculateSpeed()}>=</button>
                 <p id="Output" class="kph"></p>
 
-                <button class="reset" onClick={reset()}>Reset</button>
+                <button class="reset" onclick={resetForm()}>Reset</button>
             
         </form>
         <article></article>
@@ -44,7 +44,7 @@
             
         };
 
-        function reset () {
+        function resetForm () {
             console.log("reseteded");
             
             
