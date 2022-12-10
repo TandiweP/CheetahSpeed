@@ -40,9 +40,12 @@
         const calculations = [];
 
         function calculateSpeed () {
+            
             const mph = document.querySelector(".mph").value;
-            const kph = document.querySelector(".kph");
-            kph.textContent = `That's ${Math.floor(mph * 1.61)} kilometers per hour!`;
+            const kphP = document.querySelector(".kph");
+            const kphCalc = Math.floor(mph * 1.61);
+            calculations.push(kphCalc);
+            kphP.textContent = `That's ${kphCalc} kilometers per hour!`;
             
         };
 
@@ -52,6 +55,8 @@
             document.querySelector(".kph").innerHTML = null;
         };
         
+        // const over100 = calculations.some(num => num => 30);
+        console.log(calculations);
         
          
     </script>
